@@ -69,12 +69,12 @@ _NOTE: you might need to `sudo ln -s /usr/local/bin/node /usr/bin/node` to ensur
 
 ## License
 
-Artistic 2.0 © [<%= props.authorName %>](<%= props.authorUrl %>)
+Artistic 2.0 © [Joey Baker](https://byjoeybaker.com)
 
 
-[npm-url]: https://npmjs.org/package/<%= slugname %>
-[npm-image]: https://badge.fury.io/js/<%= slugname %>.svg
-[travis-url]: https://travis-ci.org/<%= props.githubUsername %>/<%= slugname %>
-[travis-image]: https://travis-ci.org/<%= props.githubUsername %>/<%= slugname %>.svg?branch=master
-[daviddm-url]: https://david-dm.org/<%= props.githubUsername %>/<%= slugname %>.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/<%= props.githubUsername %>/<%= slugname %>
+[npm-url]: https://npmjs.org/package/@getable/avatar
+[npm-image]: https://badge.fury.io/js/@getable/avatar.svg
+[travis-url]: https://travis-ci.org/Getable/@getable/avatar
+[travis-image]: https://travis-ci.org/Getable/@getable/avatar.svg?branch=master
+[daviddm-url]: https://david-dm.org/Getable/@getable/avatar.svg?theme=shields.io
+[daviddm-image]: https://david-dm.org/Getable/@getable/avatar
