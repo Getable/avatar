@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.1 | 2015-05-04
+* update es5 source
+* working on build script
+
 ## v1.1.0 | 2015-05-04
 * build es5 on release
 
@@ -8,6 +12,7 @@
 
 ## v1.0.0 | 2015-05-04
 Init
+
 
 
 
