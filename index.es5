@@ -1,0 +1,89 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+function _defineProperty(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+
+var _React$PropTypes$Component = require('react');
+
+var _React$PropTypes$Component2 = _interopRequireDefault(_React$PropTypes$Component);
+
+var _addons = require('react/addons');
+
+var _classNames3 = require('classnames');
+
+var _classNames4 = _interopRequireDefault(_classNames3);
+
+var _shouldComponentUpdate = _addons.addons.PureRenderMixin._shouldComponentUpdate;
+
+var namespace = 'avatar';
+var hasDigitRegEx = /\d/;
+var hasDigit = function hasDigit(digit) {
+  return hasDigitRegEx.test(digit);
+};
+var sizes = ['large', 'normal'];
+
+var Avatar = (function (_Component) {
+  function Avatar() {
+    _classCallCheck(this, Avatar);
+
+    if (_Component != null) {
+      _Component.apply(this, arguments);
+    }
+  }
+
+  _inherits(Avatar, _Component);
+
+  _createClass(Avatar, [{
+    key: 'shouldComponentUpdate',
+
+    // use the pure-render mixin without the mixin. This allows us to use es6
+    // classes and avoid "magic" code
+    value: function shouldComponentUpdate() {
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      return _shouldComponentUpdate.apply(this, args);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var className = _classNames4['default'](namespace, _defineProperty({}, '' + namespace + '--' + this.props.size, typeof this.props.size === 'string'), _defineProperty({}, '' + namespace + '--normal', !this.props.size));
+      var width = hasDigit(this.props.size) ? this.props.size : null;
+
+      return _React$PropTypes$Component2['default'].createElement(
+        'div',
+        { className: className, onClick: this.props.onClick, style: width ? { width: width, height: width } : null },
+        _React$PropTypes$Component2['default'].createElement('img', { src: this.props.image })
+      );
+    }
+  }]);
+
+  return Avatar;
+})(_React$PropTypes$Component.Component);
+
+exports['default'] = Avatar;
+
+Avatar.propTypes = {
+  image: _React$PropTypes$Component.PropTypes.string.isRequired,
+  size: function validateSize(props, propName, componentName) {
+    var value = props[propName];
+    if (value && !hasDigit(value) && sizes.indexOf(value) < 0) {
+      throw new Error('' + componentName + ' size must be a number or one of: ' + sizes.join(', '));
+    }
+  },
+  onClick: _React$PropTypes$Component.PropTypes.func
+};
+module.exports = exports['default'];
+
