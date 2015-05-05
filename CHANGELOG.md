@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.1.2 | 2015-05-04
+* don’t commit compile files
+
 ## v1.1.1 | 2015-05-04
 * update es5 source
 * working on build script
@@ -12,6 +15,7 @@
 
 ## v1.0.0 | 2015-05-04
 Init
+
 
 
 
