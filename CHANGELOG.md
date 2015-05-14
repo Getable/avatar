@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.1.4 | 2015-05-14
+* internal: package.json now idetifies its css with the "style" key
+
 ## v1.1.3 | 2015-05-11
 * react is now a peer dependency
 
@@ -18,6 +21,7 @@
 
 ## v1.0.0 | 2015-05-04
 Init
+
 
 
 
