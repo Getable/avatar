@@ -45,6 +45,7 @@
   },
   "main": "index.es5",
   "browser": "index.es5",
+  "style": "index.css",
   "devDependencies": {
     "babel": "^5.2.9",
     "babelify": "^6.0.2",
