@@ -74,7 +74,7 @@ Artistic 2.0 © [Joey Baker](https://byjoeybaker.com)
 
 [npm-url]: https://npmjs.org/package/@getable/avatar
 [npm-image]: https://badge.fury.io/js/@getable/avatar.svg
-[travis-url]: https://travis-ci.org/Getable/@getable/avatar
-[travis-image]: https://travis-ci.org/Getable/@getable/avatar.svg?branch=master
-[daviddm-url]: https://david-dm.org/Getable/@getable/avatar.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/Getable/@getable/avatar
+[travis-url]: https://travis-ci.org/Getable/avatar
+[travis-image]: https://travis-ci.org/Getable/avatar.svg?branch=master
+[daviddm-url]: https://david-dm.org/Getable/avatar.svg?theme=shields.io
+[daviddm-image]: https://david-dm.org/Getable/avatar
