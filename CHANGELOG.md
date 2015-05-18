@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.6 | 2015-05-18
+* linter fixes in test
+* updating script
+* 1.1.5
+* update babel version
+* internal: travis now installs latest npm
+* Update badge urls
+
 ## 2015-05-18
 * 1.1.5
 
@@ -64,6 +72,7 @@
 
 ## v1.0.0 | 2015-05-04
 Init
+
 
 
 
