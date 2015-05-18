@@ -1,7 +1,7 @@
 import React, {PropTypes, Component} from 'react'
 import {addons} from 'react/addons'
 import classNames from 'classnames'
-const {shouldComponentUpdate} = addons.PureRenderMixin
+const shouldComponentUpdate = addons.PureRenderMixin.shouldComponentUpdate
 const namespace = 'avatar'
 const hasDigitRegEx = /\d/
 const hasDigit = (digit) => hasDigitRegEx.test(digit)
