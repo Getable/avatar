@@ -18,6 +18,7 @@
     "react"
   ],
   "scripts": {
+    "watch": "babel index.jsx --out-file=index.es5 --watch",
     "test": "browserify -t babelify test.jsx | tap-closer | smokestack -b chrome | tap-spec",
     "tdd": "smokestack-watch *.jsx -t babelify | tap-spec",
     "note1": "we can't have nice things. prepublish also runs on npm install https://github.com/npm/npm/issues/6394 in-publish hacks around this",
