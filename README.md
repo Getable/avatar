@@ -11,6 +11,7 @@ Component that displays an image within a bordered bounding box.
   - [`<String> image` **Required**](#string-image-required)
   - [`<String> OR <Number> size` **Required**](#string-or-number-size-required)
   - [`<Function> onClick`](#function-onclick)
+  - [`<Boolean> borderless`](#boolean-borderless)
 - [Tests](#tests)
 - [Developing](#developing)
   - [Releasing](#releasing)
