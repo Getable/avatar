@@ -19,6 +19,7 @@ export default class Avatar extends Component {
       namespace
       , {[`${namespace}--${this.props.size}`]: typeof this.props.size === 'string'}
       , {[`${namespace}--normal`]: !this.props.size}
+      , {[`${namespace}--borderless`]: this.props.borderless}
     )
     const width = hasDigit(this.props.size) ? this.props.size : null
 
@@ -37,4 +38,9 @@ Avatar.propTypes = {
     }
   }
   , onClick: PropTypes.func
+  , borderless: PropTypes.bool
+}
+
+Avatar.defaultProps = {
+  borderless: false
 }

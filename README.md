@@ -40,6 +40,9 @@ Defaults to "normal". One of "normal", "large", or a number of pixels for the wi
 ### `<Function> onClick`
 Handler for a a click on the avatar. Defaults to nothing.
 
+### `<Boolean> borderless`
+Defaults to `false`. If enabled, turns off the border. This might be useful if you just need an image constrained to a certain size.
+
 ## Tests
 Tests are in [tape](https://github.com/substack/tape).
 

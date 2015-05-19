@@ -31,3 +31,7 @@
   width: var(--width-avatar-normal);
   height: var(--width-avatar-normal);
 }
+
+.avatar--borderless {
+  border: none;
+}
