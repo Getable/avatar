@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.1.8 | 2015-05-19
+* add: a borderless prop
+
 ## v1.1.7 | 2015-05-18
 * internal: add watch script
 
@@ -67,6 +70,7 @@
 
 ## v1.0.0 | 2015-05-04
 Init
+
 
 
 
