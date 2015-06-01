@@ -1,5 +1,5 @@
 {
-  "version": "1.1.8",
+  "version": "1.2.0",
   "name": "@getable/avatar",
   "description": "Component that displays an image within a bordered bounding box.",
   "author": {

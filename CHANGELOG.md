@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.2.0 | 2015-06-01
+* add: srcSet prop
+* add: alt prop
+* internal: update release script
+* internal: update deps
+* Install lodash
+
 ## v1.1.8 | 2015-05-19
 * add: a borderless prop
 
@@ -70,6 +77,7 @@
 
 ## v1.0.0 | 2015-05-04
 Init
+
 
 
 
