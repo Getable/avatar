@@ -1,6 +1,7 @@
 import React, {PropTypes, Component} from 'react'
 import {addons} from 'react/addons'
 import classNames from 'classnames'
+import map from 'lodash/collection/map'
 const {shouldComponentUpdate} = addons.PureRenderMixin
 const namespace = 'avatar'
 const hasDigitRegEx = /\d/
@@ -22,9 +23,12 @@ export default class Avatar extends Component {
       , {[`${namespace}--borderless`]: this.props.borderless}
     )
     const width = hasDigit(this.props.size) ? this.props.size : null
+    const srcSet = typeof this.props.srcSet === 'string'
+      ? this.props.srcSet
+      : map(this.props.srcSet, (url, size) => `${url} ${size}`).join(',')
 
     return (<div className={className} onClick={this.props.onClick} style={width ? {width, height: width} : null} >
-      <img src={this.props.image} alt={this.props.alt} />
+      <img src={this.props.image} alt={this.props.alt} srcSet={srcSet} />
     </div>)
   }
 }
@@ -38,6 +42,10 @@ Avatar.propTypes = {
     }
   }
   , alt: PropTypes.string.isRequired
+  , srcSet: PropTypes.oneOf([
+      PropTypes.objectOf(PropTypes.string)
+      , PropTypes.string
+    ])
   , onClick: PropTypes.func
   , borderless: PropTypes.bool
 }

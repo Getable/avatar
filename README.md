@@ -47,6 +47,13 @@ Handler for a a click on the avatar. Defaults to nothing.
 ### `<Boolean> borderless`
 Defaults to `false`. If enabled, turns off the border. This might be useful if you just need an image constrained to a certain size.
 
+### `<Object> or <String> srcSet`
+Sets `srcset` on the image. If a string, set this just like you would in normal HTML. If an object, the keys are the size and the values are the url
+
+```html
+srcSet={{'1x': 'http://…', '2x': 'http://'}}
+```
+
 ## Tests
 Tests are in [tape](https://github.com/substack/tape).
 
