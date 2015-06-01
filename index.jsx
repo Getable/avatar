@@ -24,7 +24,7 @@ export default class Avatar extends Component {
     const width = hasDigit(this.props.size) ? this.props.size : null
 
     return (<div className={className} onClick={this.props.onClick} style={width ? {width, height: width} : null} >
-      <img src={this.props.image} />
+      <img src={this.props.image} alt={this.props.alt} />
     </div>)
   }
 }
@@ -37,6 +37,7 @@ Avatar.propTypes = {
       throw new Error(`${componentName} size must be a number or one of: ${sizes.join(', ')}`)
     }
   }
+  , alt: PropTypes.string.isRequired
   , onClick: PropTypes.func
   , borderless: PropTypes.bool
 }

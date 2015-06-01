@@ -38,6 +38,9 @@ Path to an image.
 ### `<String> OR <Number> size` **Required**
 Defaults to "normal". One of "normal", "large", or a number of pixels for the width.
 
+### `<String> alt` **Required**
+Required because it's good for accessibility and the spec says so. The `alt` attribute for the image.
+
 ### `<Function> onClick`
 Handler for a a click on the avatar. Defaults to nothing.
 

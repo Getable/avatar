@@ -6,7 +6,7 @@ import {addons} from 'react/addons'
 import Avatar from './index.jsx'
 const {TestUtils} = addons
 const {isElement, createRenderer} = TestUtils
-const defaultProps = {image: 'http://image.ocm'}
+const defaultProps = {image: 'http://image.ocm', alt: 'hi'}
 
 test('Avatar: constructor', (t) => {
   const avatar = createElement(Avatar, defaultProps)
