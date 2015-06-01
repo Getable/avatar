@@ -47,23 +47,26 @@
   "main": "index.es5",
   "browser": "index.es5",
   "style": "index.css",
+  "devDependenciesNotes": {
+    "smokestack": "needs to be pinned to 3.1 so that smokestack will actually exit"
+  },
   "devDependencies": {
-    "babel": "^5.4.3",
-    "babelify": "^6.0.2",
-    "browserify": "^9.0.8",
-    "dmn": "^1.0.5",
+    "babel": "^5.4.7",
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.3",
+    "dmn": "^1.0.10",
     "doctoc": "^0.13.0",
-    "eslint": "^0.20.0",
-    "eslint-plugin-react": "^2.0.0",
+    "eslint": "^0.22.1",
+    "eslint-plugin-react": "^2.4.0",
     "ghooks": "^0.3.2",
     "in-publish": "^1.1.1",
     "nsp": "^1.0.1",
-    "react": "^0.13.2",
-    "sinon": "^1.12.2",
-    "smokestack": "^3.2.0",
+    "react": "^0.13.3",
+    "sinon": "^1.14.1",
+    "smokestack": "~3.1.0",
     "smokestack-watch": "^0.4.1",
     "tap-closer": "^1.0.0",
-    "tap-spec": "^3.0.0",
+    "tap-spec": "^4.0.0",
     "tape": "^4.0.0"
   },
   "peerDependencies": {
@@ -71,7 +74,7 @@
   },
   "dependencies": {
     "@getable/variables": "^1.0.1",
-    "classnames": "^2.0.0",
+    "classnames": "^2.1.2",
     "lodash": "^3.9.3"
   }
 }
