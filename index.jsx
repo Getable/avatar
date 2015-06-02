@@ -42,7 +42,7 @@ Avatar.propTypes = {
     }
   }
   , alt: PropTypes.string.isRequired
-  , srcSet: PropTypes.oneOf([
+  , srcSet: PropTypes.oneOfType([
       PropTypes.objectOf(PropTypes.string)
       , PropTypes.string
     ])
