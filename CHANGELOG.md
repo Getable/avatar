@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.2.1 | 2015-06-01
+* fix: propType oneOfType
+
 ## v1.2.0 | 2015-06-01
 * add: srcSet prop
 * add: alt prop
@@ -77,6 +80,7 @@
 
 ## v1.0.0 | 2015-05-04
 Init
+
 
 
 
